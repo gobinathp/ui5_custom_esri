@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+specVersion: "1.0"
+metadata:
+  name: esricustom
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: DEVIDES
+          url: http://192.168.41.27:8009
+        credentials:
+          username: env:UI5_USERNAME 
+          password: env:UI5_PASSWORD
+        app:
+          name: zlibrary
+          package: zcustomlibrary
+          transport: DEVK913967

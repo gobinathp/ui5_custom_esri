@@ -30,7 +30,9 @@
       "@sap/ux-ui5-tooling"
     ]
   },
-  "repository":{
+  {
+  "name": "@gobinathp/ui5_custom_esri",
+  "repository": {
     "type": "git",
     "url": "https://github.com/gobinathp/ui5_custom_esri.git"
   },

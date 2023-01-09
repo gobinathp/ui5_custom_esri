@@ -1,5 +1,5 @@
 {
-  "name": "esricustom",
+  "name": "@gobinathp/ui5_custom_esri",
   "version": "0.0.1",
   "private": true,
   "description": "A Fiori application.",
@@ -30,5 +30,10 @@
       "@sap/ux-ui5-tooling"
     ]
   },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/gobinathp/ui5_custom_esri.git"
+  },
+  
   "sapuxLayer": "CUSTOMER_BASE"
 }
